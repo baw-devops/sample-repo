@@ -9,3 +9,4 @@ spec:
     - name: directory
       persistentVolumeClaim:
         claimName: shared-workspace
+  serviceAccountName: tekton-pipeline

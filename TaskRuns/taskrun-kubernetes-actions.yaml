@@ -8,7 +8,7 @@ spec:
   params:
     - name: script
       value: |
-        kubectl apply -f https://raw.githubusercontent.com/brightzheng100/tekton-pipeline-example/master/manifests/deployment.yaml
+        kubectl apply -f deployment.yaml
         echo "----------"
         kubectl get deployment
   workspaces:
