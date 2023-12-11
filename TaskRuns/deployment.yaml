@@ -25,6 +25,7 @@ spec:
       labels:
         app: spring-boot-docker
     spec:
+      serviceAccountName: tekton-pipeline
       containers:
         - name: myapp
           image: gokulnatham/spring-boot-docker:v1.1.0
