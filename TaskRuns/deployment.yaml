@@ -28,7 +28,7 @@ spec:
       serviceAccountName: tekton-pipeline
       containers:
         - name: myapp
-          image: gokulnatham/spring-boot-docker:v1.1.0
+          image: gokulnatham/spring-boot-docker:v1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
