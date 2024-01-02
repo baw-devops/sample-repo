@@ -8,7 +8,6 @@ spec:
     - fetching a git repository as the source
     - using buildah to build a Docker image by Dockerfile
     - pusing the built Docker image to a desired repository
-    - deploying it to Kubernetes cluster
   
   # Parameters
   params:
@@ -21,9 +20,6 @@ spec:
   - name: image-full-path-with-tag
     type: string
     description: The image full path to host the built image, with version tag, e.g. image-registry.openshift-image-registry.svc:5000/tekton-pipelines/spring-boot-docker:v1.0.0.
-  - name: deployment-manifest
-    type: string
-    description: The manifest file for deployment.
 
   # Workspaces
   workspaces:
