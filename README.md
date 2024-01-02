@@ -1,4 +1,4 @@
-## Tekton Pipeline Example
+### Tekton Pipeline Example
 
 This is a very simple but workable Tekton Pipeline development process that showcases:
 
