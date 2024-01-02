@@ -31,7 +31,6 @@ spec:
             configmap:
               name: maven-settings
           - name: workspace
-            persistentvolumeclaim:
-              claimName: shared-workspace
+            emptyDir: {}
           - name: empty-dir
             emptyDir: {}
