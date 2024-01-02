@@ -10,5 +10,3 @@ spec:
     value: master #$(body.repository.default_branch)
   - name: image-full-path-with-tag
     value: gokulnatham/spring-boot-docker:v1.0.0
-  - name: deployment-manifest
-    value: https://raw.githubusercontent.com/gokulnatham/tekton-pipeline-example/main/TaskRuns/deployment.yaml

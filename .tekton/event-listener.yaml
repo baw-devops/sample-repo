@@ -3,7 +3,6 @@ kind: EventListener
 metadata:
   name: tekton-event-listener
 spec:
-  serviceAccountName: tekton-pipeline
   triggers:
     - name: github-listener
       bindings:
