@@ -1,0 +1,14 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: tekton-trigger-binding
+spec:
+  params:
+  - name: repo-url
+    value: $(body.repository.clone_url)
+  - name: tag-name
+    value: master #$(body.repository.default_branch)
+  - name: image-full-path-with-tag
+    value: gokulnatham/spring-boot-docker:v1.0.0
+  - name: deployment-manifest
+    value: https://raw.githubusercontent.com/gokulnatham/tekton-pipeline-example/main/TaskRuns/deployment.yaml
