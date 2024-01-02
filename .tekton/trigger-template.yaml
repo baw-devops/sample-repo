@@ -27,9 +27,6 @@ spec:
           - name: image-full-path-with-tag
             value: $(tt.params.image-full-path-with-tag)
         workspaces:
-          - name: maven-settings
-            configmap:
-              name: maven-settings
           - name: workspace
             emptyDir: {}
           - name: empty-dir
