@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: apply-configmap-task
+spec:
+  steps:
+    - name: apply-configmap
+      image: alpine
+      command:
+        - sh
+      args:
+        - -c
+        - |
+          kubectl create cm maven-settings --from-file=maven-settings.xml
