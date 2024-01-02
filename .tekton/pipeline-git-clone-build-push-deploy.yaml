@@ -85,20 +85,3 @@ spec:
       - name: source
         workspace: workspace
 
-  # 4. Task - kubectl deploy
-  - name: deploy
-    taskRef:
-      name: kubernetes-actions
-    runAfter:
-    - buildah
-    params:
-      - name: script
-        value: |
-          kubectl apply -f $(params.deployment-manifest)
-          echo "----------"
-          kubectl get deployment
-    workspaces:
-      - name: kubeconfig-dir
-        workspace: empty-dir
-      - name: manifest-dir
-        workspace: empty-dir
